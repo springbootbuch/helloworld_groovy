@@ -1,7 +1,9 @@
 plugins {
+    // 1
     id "org.springframework.boot" version "1.5.1.RELEASE"
 }
 
+ // 2
 apply plugin: "groovy"
 
 jar {
@@ -21,6 +23,7 @@ repositories {
 }
 
 dependencies {
+    // 3
     compile "org.codehaus.groovy:groovy"
     compile "org.springframework.boot:spring-boot-starter-web"
     testCompile "org.springframework.boot:spring-boot-starter-test"
