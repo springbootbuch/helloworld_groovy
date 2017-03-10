@@ -12,10 +12,13 @@ class Application {
     @RestController
     static class HelloWorldController {
         @GetMapping("/hello")
-        String helloWorld(
-            @RequestParam final String name
+        def helloWorld(
+            @RequestParam name
         ) {
-            "Hello, $name\n"
+            """
+            Hello $name,
+            how are you?
+            """.stripIndent().trim()
         }
     }
     

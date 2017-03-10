@@ -23,6 +23,6 @@ class ApplicationTest {
         this.mockMvc
             .perform(get("/hello").param("name", "World"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Hello, World\n"))
+            .andExpect(content().string("Hello World,\nhow are you?"))
     }
 }
