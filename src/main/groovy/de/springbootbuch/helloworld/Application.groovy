@@ -15,7 +15,7 @@ class Application {
         String helloWorld(
             @RequestParam final String name
         ) {
-            return "Hello, " + name + "\n"
+            "Hello, $name\n"
         }
     }
     
