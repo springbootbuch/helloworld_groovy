@@ -11,11 +11,18 @@ class Application {
     
     @RestController
     static class HelloWorldController {
+
+        class Response {
+            String greeting
+        }
+
         @GetMapping("/hello")
-        String helloWorld(
-            @RequestParam final String name
+        def helloWorld(
+            @RequestParam name
         ) {
-            "Hello, $name\n"
+            new Response(
+                greeting: "Hello $name"
+            )
         }
     }
     
