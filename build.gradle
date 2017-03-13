@@ -27,4 +27,9 @@ dependencies {
     compile "org.codehaus.groovy:groovy"
     compile "org.springframework.boot:spring-boot-starter-web"
     testCompile "org.springframework.boot:spring-boot-starter-test"
+
+    //Spock
+    //https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html#boot-features-testing-spring-boot-applications-with-spock
+    testCompile "org.spockframework:spock-spring:1.1-groovy-2.4-rc-3"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4-rc-3"
 }
