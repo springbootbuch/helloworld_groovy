@@ -12,9 +12,7 @@ class Application {
     @RestController
     static class HelloWorldController {
         @GetMapping("/hello")
-        def helloWorld(
-            @RequestParam name
-        ) {
+        def helloWorld(@RequestParam name) {
             """
             Hello $name,
             how are you?
