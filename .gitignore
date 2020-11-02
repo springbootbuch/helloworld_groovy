@@ -51,3 +51,5 @@ gradle-app.setting
 .project
 .settings/
 .factorypath
+
+bin/
