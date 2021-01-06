@@ -1,7 +1,7 @@
 // 1
 buildscript {
     ext {
-        springBootVersion = '2.4.0'
+        springBootVersion = "2.4.0"
     }
     repositories {
         mavenCentral()
@@ -12,8 +12,8 @@ buildscript {
 }
 
 // 2
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
 // 3
 apply plugin: "groovy"
 
@@ -41,3 +41,4 @@ dependencies {
 test {
   useJUnitPlatform()
 }
+
